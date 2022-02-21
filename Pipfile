@@ -9,6 +9,8 @@ djangorestframework = "*"
 django-cors-headers = "*"
 
 [dev-packages]
+jupyter = "*"
+notebook = "*"
 
 [requires]
 python_version = "3.8"
