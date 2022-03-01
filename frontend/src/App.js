@@ -65,6 +65,10 @@ class App extends Component {
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
 
+  editItem = (item) => {
+    this.setState({activeItem:item, modal: !this.state.modal });
+  };
+
   displayCompleted = (status) => {
     if (status) {
       return this.setState({viewcompleted: true});
