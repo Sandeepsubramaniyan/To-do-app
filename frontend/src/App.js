@@ -45,6 +45,10 @@ class App extends Component {
     };
   }
 
+  toggle=()=>{
+    this.setState({modal:!this.state.modal})
+  };
+  
   displayCompleted = (status) => {
     if (status) {
       return this.setState({viewcompleted: true});
