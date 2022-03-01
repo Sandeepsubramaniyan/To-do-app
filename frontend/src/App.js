@@ -45,8 +45,8 @@ class App extends Component {
     };
   }
 
-  toggle=()=>{
-    this.setState({ modal: !this.state.modal })
+  toggle=() => {
+    this.setState({ modal: !this.state.modal });
   };
 
   handleSubmit= (item) => {
@@ -71,10 +71,10 @@ class App extends Component {
 
   displayCompleted = (status) => {
     if (status) {
-      return this.setState({viewcompleted: true});
+      return this.setState({viewcompleted: true });
     }
 
-    return this.setState({viewCompleted:  false});
+    return this.setState({viewCompleted:  false });
   };
 
   renderTabList = () => {
@@ -155,6 +155,13 @@ class App extends Component {
             </div>
           </div>
         </div>
+        {this.state.modal ? (
+          <Modal
+            activeItem={this.state.activeItem}
+            toggle={this.toggle}
+            onSave={this.handleSubmit}
+          />
+        ) : null }
       </main>
     );
   }
