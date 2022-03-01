@@ -48,7 +48,13 @@ class App extends Component {
   toggle=()=>{
     this.setState({modal:!this.state.modal})
   };
-  
+
+  handleSubmit= (item) => {
+    this.toggle();
+
+    alert("save" + JSON.stringify(item));
+  }
+
   displayCompleted = (status) => {
     if (status) {
       return this.setState({viewcompleted: true});
