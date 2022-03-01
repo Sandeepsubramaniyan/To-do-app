@@ -124,6 +124,7 @@ class App extends Component {
           </button>
           <button
             className="btn btn-danger"
+            onClick={() => this.handleDelete(item)}
           >
             Delete
           </button>
