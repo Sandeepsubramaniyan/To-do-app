@@ -46,6 +46,17 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    this.refreshList();
+  }
+
+  refreshList=() => {
+    axios
+    .get("/api/todos/")
+    .then((res) => this.setState({ todoList: res.data }))
+    .catch((err) => console.log(err));
+  };
+
   toggle=() => {
     this.setState({ modal: !this.state.modal });
   };
