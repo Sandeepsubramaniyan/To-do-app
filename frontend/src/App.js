@@ -36,7 +36,7 @@ class App extends Component {
     super(props);
     this.state = {
       viewCompleted: false,
-      todoList: todoItems,
+      todoList: [],
       modal: false,
       activeItem:  {
         title:"",
