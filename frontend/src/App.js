@@ -1,5 +1,6 @@
 import './App.css';
 import React , {Component} from "react";
+import Modal from "./components/Modal";
 
 const todoItems = [
   {
