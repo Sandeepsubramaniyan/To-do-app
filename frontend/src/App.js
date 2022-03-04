@@ -3,6 +3,7 @@ import React , {Component} from "react";
 import Modal from "./components/Modal";
 import axios from "axios";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -24,9 +25,9 @@ class App extends Component {
 
   refreshList=() => {
     axios
-    .get("/api/todos/")
-    .then((res) => this.setState({ todoList: res.data }))
-    .catch((err) => console.log(err));
+      .get("/api/todos/")
+      .then((res) => this.setState({ todoList: res.data }))
+      .catch((err) => console.log(err));
   };
 
   toggle= () => {
@@ -65,7 +66,7 @@ class App extends Component {
 
   displayCompleted = (status) => {
     if (status) {
-      return this.setState({viewcompleted: true });
+      return this.setState({viewCompleted: true });
     }
 
     return this.setState({viewCompleted:  false });
@@ -76,13 +77,13 @@ class App extends Component {
       <div className= "nav nav-tabs">
         <span
           className = {this.state.viewCompleted ? "nav-link active" : "nav-link"}  
-          onClick = {() =>this.displayCompleted(true)}
+          onClick = {() => this.displayCompleted(true)}
         >
           Complete
         </span>
         <span 
           className={this.state.viewCompleted ? "nav-link" : "nav-link active"}
-          onClick = {() =>this.displayCompleted(false)}
+          onClick = {() => this.displayCompleted(false)}
         >
           Incomplete
         </span>
@@ -129,7 +130,7 @@ class App extends Component {
 
   render() {
     return (
-      <main className="conatiner">
+      <main className="container">
         <h1 className="text-white text-uppercase text-center my-4">Todo app</h1>
         <div className="row">
           <div className="col-md-6 col-sm-10 mx-auto p-0">
