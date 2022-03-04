@@ -8,7 +8,7 @@ Pipenv
 # Getting Started
 
     1. Clone the project to your machine [git clone https://github.com/Sandeepsubramaniyan/To-do-app.git]
-    2. Navigate into the directory [cd django-todo-react]
+    2. Navigate into the directory [cd To-do-app]
     3. Source the virtual environment by using [pipenv shell]
     4. Install the dependencies by using [pipenv install]
     5. Navigate into the frontend directory [cd frontend]
