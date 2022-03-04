@@ -2,9 +2,9 @@
 This is a simple Todo application built off Django (including the Django REST Framework for API CRUD operations) and React. For a complete walkthrough, see Build a To-Do application Using Django and React.https://reactjs.org/docs/getting-started.html
 
 # Requirements
-Python3
-Pipenv
-
+    1.Install and set up a local programming environment for Python 3 (https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-python-3)
+    2.Install Node.js and Create a Local Development Environment (https://www.digitalocean.com/community/tutorial_series/how-to-install-node-js-and-create-a-local-development-environment)
+ 
 # Getting Started
 
     1. Clone the project to your machine [git clone https://github.com/Sandeepsubramaniyan/To-do-app.git]
@@ -20,11 +20,3 @@ Pipenv
     1.Run this command to start the backend server in the [backend] directory: [python manage.py runserver] (You have to run this command while you are sourced into the virtual environment and address will be http://127.0.0.8000
     2.Run this command to start the frontend development server in the [frontend] directory: [npm install] (This will start the frontend on the adddress localhost:3000)
 
-# Application is Built With
-
-    React - A progressive JavaScript framework.
-    Python - A programming language that lets you work quickly and integrate systems more effectively.
-    Django - A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
-    
-  # Creator Credit
-  This demo app was originally built for a scotch.io (acquired in 2020 by DigitalOcean) article by Jordan Irabor
