@@ -39,7 +39,7 @@ class App extends Component {
 
     if (item.id) {
       axios
-        .put('/api/todos/${item.id}/',item)
+        .put(`/api/todos/${item.id}/`,item)
         .then((res) => this.refreshList());
       return;
     }
@@ -50,7 +50,7 @@ class App extends Component {
 
   handleDelete=(item) => {
     axios
-      .delete('/api/todos/${item.id/')
+      .delete(`/api/todos/${item.id}/`)
       .then((res) => this.refreshList());
   };
 
@@ -94,7 +94,7 @@ class App extends Component {
   renderItems = () => {
     const { viewCompleted } = this.state;
     const newItems = this.state.todoList.filter(
-      (item) => item.completed = viewCompleted
+      (item) => item.completed === viewCompleted
     );
 
     return newItems.map((item) => (
