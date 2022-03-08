@@ -62,28 +62,30 @@ class App extends Component {
 
   editItem = (item) => {
     this.setState({activeItem:item, modal: !this.state.modal });
-  };
+  };                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
   displayCompleted = (status) => {
     if (status) {
       return this.setState({viewCompleted: true });
     }
 
-    return this.setState({viewCompleted:  false });
+    return this.setState({viewCompleted: false });
   };
 
   renderTabList = () => {
     return(
       <div className= "nav nav-tabs">
         <span
-          className = {this.state.viewCompleted ? "nav-link active" : "nav-link"}  
           onClick = {() => this.displayCompleted(true)}
+          className = {this.state.viewCompleted ? "nav-link active" : "nav-link"}  
+          
         >
           Complete
         </span>
         <span 
+          onClick = {() => this.displayCompleted(false)}          
           className={this.state.viewCompleted ? "nav-link" : "nav-link active"}
-          onClick = {() => this.displayCompleted(false)}
+    
         >
           Incomplete
         </span>
